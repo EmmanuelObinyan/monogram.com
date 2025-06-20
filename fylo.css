@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: open sans;
+}
+header{
+    background-color: white;
+    width: 100%;
+    justify-self: center;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+header img{
+    width:8rem;
+    display: block;
+    margin: auto;
+    
+}
+nav{
+    background-color: white;
+    width: 75%;
+    min-width:179px;
+    height: 7rem;
+    align-content: center;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+nav ul li{
+    margin-right: 8%;
+    color: hsl(243, 87%, 12%);
+    text-transform: capitalize;
+}
+main{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    /* background-color: aquamarine; */
+    padding-top: 2%;
+}
+/* first section having the email and submit */
+.first-section{
+    background-color: white;
+    width: 85%;
+    margin:2% auto;
+    display: flex;
+    height: auto;
+    
+}
+.div1{
+    background-color:  white;
+    width:50%;
+    height: 30rem;
+}
+.div1 h1{
+    width: 50%;
+    color: hsl(243, 87%, 12%) ;
+    font-size: 1.9rem;
+    margin-left: 4%;
+    margin-top: 15%;
+}
+.div1 p{
+    width: 55%;
+    color: hsl(243, 87%, 12%) ;
+    margin-top: 4%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 4%;
+}
+.div1 input{
+    margin-top: 5%;
+    padding: 2%;
+    width: 55%;
+    margin-left: 4%;
+}
+.div1 input::placeholder{
+    font-style: normal;
+    font-weight: lighter;
+}
+.div1 button{
+    margin-top: 5%;
+    padding: 2.3%;
+    width: 20%;
+    color: white;
+    font-weight: 500;
+    background-color:  hsl(224, 93%, 58%);
+    border: none;
+    border-radius: 2%;
+}
+.div2{
+    background-color:  white;
+    flex: 1;
+    width: 55%;
+    height: 30rem;
+    padding-left: 2%;
+}
+.div2 img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    height: 30rem;
+}
+.second-section{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: -2%;
+}
+.second-section img{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom:-0.3%;
+}
+.div3{
+    background-color: hsl(240, 75%, 98%);
+    display: flex;
+}
+.div3 div:first-child{
+    background-color: hsl(240, 75%, 98%);
+    width: 45%;
+}
+.div3 div:first-child h1{
+    width: 100%;
+    color: hsl(243, 87%, 12%);
+    margin-top: 2%;
+    font-size: 2.2rem;
+    margin-left: 3%;
+    text-transform: capitalize;
+}
+.div3 div:first-child .word{
+    width: 55%;
+    color:hsl(243, 87%, 12%) ;
+    margin-top: 3%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 4%;
+}
+.div3 div:first-child .text{
+  width: 50%;
+  color: hsl(243, 87%, 12%);
+  margin-top: 2%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 4%;
+  margin-bottom: 3%;
+}
+/* button border line for second section */
+.div3 div:first-child button{
+    margin-left: 4%;
+    width: auto;
+    padding-bottom: 1%;
+    border-color: hsl(170, 45%, 43%);
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-style: solid;
+    background-color: transparent;
+}
+.div3 div:first-child button a{
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    font-size: 0.83rem;
+}
+.div3 div:last-child{
+    background-color: hsl(240, 75%, 98%);
+    width: 45%;
+}
+.div3 div:last-child img{
+    width: auto;
+}
+
+.div3 div:first-child img{
+  width: 10%;
+
+}
+/* for the avatar in second section */
+aside{
+    background-color: white;
+    width: 40%;
+    text-align: left;
+    margin-top: 4%;
+    margin-left: 3%;
+    border-radius: 6px;
+}
+.quote{
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 4%;
+}
+.asidetext{
+    margin-bottom: 4%;
+    width: 75%;
+    height: 8rem;
+    font-size: 0.8rem;
+    margin-left: 4%;
+    margin-top: 3%;
+    font-weight: 500;
+    line-height: 170%;
+}
+
+figure{
+    background-color: white;
+    display: flex;
+    height: auto;
+    border-radius: 10px;
+    padding-bottom: 3%;
+}
+figure img{
+   border-radius: 200px;
+   margin-left: 3%;
+   height: 1.8rem;
+   object-fit: cover;
+}
+article{
+  margin-left: 2%;
+  margin-top: 2%;
+}
+article p{
+    font-size: 0.7rem;
+    color: hsl(243, 87%, 12%);
+    font-weight: lighter;
+}
+article h4{
+    font-size: 1rem;
+    color: hsl(243, 87%, 12%);
+}
+footer{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+.first-child{
+    background-color:  hsl(238, 22%, 44%);
+    height: 15rem;
+    display: flex;
+    padding-top: 2%;
+    align-items: center;
+}
+.star p{
+  width: 45%;
+  color: hsl(240, 75%, 98%);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 120%;
+}
+.star h2{
+    color: hsl(240, 75%, 98%);
+    font-size: 1.7rem;
+    margin-bottom: 1%;
+}
+.button{
+    height: auto;
+    width: 50%;
+}
+.button input{
+    width: 65%;
+    padding:1.7%;
+    display: block;
+    margin-bottom: 1%;
+    border-width: 1px;
+    border-color: white;
+}
+.button input::placeholder{
+    font-style: normal;
+    font-weight: lighter;
+}
+.button button{
+    padding: 1.7%;
+    border: none;
+    width: 25%;
+    color: aliceblue;
+    font-weight: 600;
+    background-color:  hsl(224, 93%, 58%);
+    border-width: 1px;
+    /* border-color: ; */
+}
+.final{
+    background-color: hsl(243, 87%, 12%);
+    height: 15rem;
+    display: flex;
+}
+.final div:nth-child(1){
+    border: none;
+    flex: 1;
+}
+.final div:nth-child(1) img{
+ width: 35%;
+ color: white;
+ margin-top:11%;
+ margin-bottom: 4%;
+ margin-left: 11%;
+ display: block;
+}
+
+.final div:nth-child(1) a {
+   width: 85%;  
+   margin: auto;
+   color:  hsl(0, 0%, 75%);
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 0.9rem;
+   display: block;
+}
+.final div:nth-child(1) i{
+    margin-right: 1%;
+}
+.final div:nth-child(2){
+    background-color: hsl(243, 87%, 12%);
+    flex: 1;
+}
+.final div:nth-child(2) article p{
+    width: 70%;
+    margin: auto;
+    color: hsl(0, 0%, 75%);
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.final div:nth-child(2) article{
+    margin-top: 25%;
+    display: block;
+}
+.final div:nth-child(3){
+background-color:  hsl(243, 87%, 12%);
+flex: 1;
+}
+.final div:nth-child(4) button {
+   padding: 1%;
+   border-radius: 25px;
+   margin-left: 3%;
+   border-color: hsl(0, 0%, 75%);
+   background-color: transparent;
+   margin-top: 25%;
+}
+.final div:nth-child(4) button i{
+    color: hsl(0, 0%, 75%);
+    font-size: 1.2rem;
+}
+address{
+    font-style: normal;
+    color: hsl(0, 0%, 75%) ;
+    width: 50%;
+    margin:26% auto;
+    line-height: 150%;
+    font-weight: 600;
+}
+.final div:nth-child(4){
+background-color: hsl(243, 87%, 12%);
+flex: 1;
+}

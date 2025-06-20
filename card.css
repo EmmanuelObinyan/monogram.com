@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: auto;
+    font-family:Big shoulders;
+}
+.general{
+    background-color: blue;
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-self: center;
+    margin-top: 10%;
+}
+@media only screen and (max-width:820px) {
+    
+    .general{
+        display: flex;
+        flex-wrap: wrap;
+        height:auto;
+
+    }
+}
+div:nth-child(1){
+    background-color: hsl(31, 77%, 52%);
+    height: auto;
+}
+div:nth-child(1) img{
+    width: 20%;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+div:nth-child(1) h1{
+ font-size: 1.4rem;
+ color: hsl(0, 0%, 95%);
+ margin-left: 10%;
+ margin-top: 5%;
+ text-transform: uppercase;
+}
+div:nth-child(1) p{
+    width:50%;
+    color:  hsla(0, 0%, 100%, 0.75);
+    margin-top: 6%;
+    font-size: 0.8rem;
+    font-family: lexend deca;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    line-height: 150%;
+}
+div:nth-child(1) button{
+  padding: 4%;
+  border-radius: 25px;
+  border: none;
+  font-size: 1.1rem;
+  width: 40%;
+  margin-top:18% ;
+  margin-left: 10%;
+}
+div:nth-child(1) button:active{
+ background-color: hsl(31, 77%, 52%);
+ border: white;
+ border-style: solid;
+ border-width: 2px;
+}
+div:nth-child(1) button h5:active{
+    color: white;
+}
+div:nth-child(1) button h5{
+    display: inline;
+    width: 100%;
+    color: hsl(31, 77%, 52%);
+    text-transform: capitalize;
+    font-family: lexend deca;
+    font-weight: lighter;
+}
+div:nth-child(2){
+    background-color:hsl(184, 100%, 22%) ;
+}
+div:nth-child(2) img{
+    width: 20%;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+div:nth-child(2) h1{
+ font-size: 1.4rem;
+ color: hsl(0, 0%, 95%);
+ margin-left: 10%;
+ margin-top: 5%;
+ text-transform: uppercase;
+}
+div:nth-child(2) p{
+    width:50%;
+    color:  hsla(0, 0%, 100%, 0.75);
+    margin-top: 6%;
+    font-size: 0.8rem;
+    font-family: lexend deca;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 12%;
+    line-height: 150%;
+}
+div:nth-child(2) button{
+  padding: 4%;
+  border-radius: 25px;
+  border: none;
+  font-size: 1.1rem;
+  width: 40%;
+  margin-top:13%;
+  margin-left: 10%;
+}
+div:nth-child(2) button h5{
+    display: inline;
+    width: 100%;
+    color: hsl(184, 100%, 22%);
+    text-transform: capitalize;
+    font-family: lexend deca;
+    font-weight: lighter;
+}
+div:nth-child(2) button:active{
+    background-color: hsl(184, 100%, 22%);
+    border: white;
+    border-style: solid;
+    border-width: 2px;
+   }
+   div:nth-child(2) h5:active{
+       color: white;
+   }
+div:nth-child(3){
+    background-color: hsl(179, 100%, 13%);
+    height: auto;
+}
+div:nth-child(3) img{
+    width: 20%;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+div:nth-child(3) h1{
+ font-size: 1.4rem;
+ color: hsl(0, 0%, 95%);
+ margin-left: 10%;
+ margin-top: 5%;
+ text-transform: uppercase;
+}
+div:nth-child(3) p{
+    width:50%;
+    color:  hsla(0, 0%, 100%, 0.75);
+    margin-top: 6%;
+    font-size: 0.8rem;
+    font-family: lexend deca;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    line-height: 150%;
+}
+div:nth-child(3) button{
+  padding: 4%;
+  border-radius: 25px;
+  border: none;
+  font-size: 1.1rem;
+  width: 40%;
+  margin-top:16% ;
+  margin-left: 10%;
+}
+div:nth-child(3) button h5{
+    display: inline;
+    width: 100%;
+    color: hsl(179, 100%, 13%);
+    text-transform: capitalize;
+    font-family: lexend deca;
+    font-weight: lighter;
+}
+div:nth-child(3) button:active{
+    background-color: hsl(179, 100%, 13%);
+    border: white;
+    border-style: solid;
+    border-width: 2px;
+   }
+   div:nth-child(3) button h5:active{
+       color: white;
+   }

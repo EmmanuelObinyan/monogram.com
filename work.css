@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-family: Young serif;
+}
+body{
+    background-color:rgb(255, 232, 204);
+}
+.first-section{
+    background-color:rgb(249, 239, 228);
+    height:auto;
+    width: 45%;
+    margin:5% auto;
+    border-radius: 20px;
+    padding-top: 2%;
+}
+.first-section img{
+    width:85%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+}
+article{
+    background-color:transparent;
+    margin: auto;
+    height: auto;
+    padding-top: 2%;
+    width: 85%;
+}
+article p{
+    font-size: 0.9rem;
+    text-align: justify;
+    width: 85%;
+    
+}
+article h1{
+    text-align:left;
+    font-size: 2.3rem;
+    margin-bottom: 2%;
+}
+.wording{
+    background-color:rgb(255, 223, 229);
+    width: 85%;
+    margin: auto;
+    height: auto;
+    padding: 3%;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+.wording p{
+    display: inline;
+    font-weight: bold;
+}
+.wording ul{
+    margin-left: 5%;
+}
+.wording li{
+    font-weight:200;
+    font-size: 0.9rem;
+}
+.wording h3{
+  margin-bottom:1%;
+  color: rgb(199, 30, 58);
+}
+.recipe{
+    height: auto;
+    width: 90%;
+    background-color:transparent;
+    margin: auto;
+    margin-top: 2%;
+    padding-bottom:3%;
+}
+.recipe h2{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-left: 1%;
+    color: rgb(158, 34, 55);
+}
+.recipe ul{
+    margin-left: 6%;
+    line-height: 150%;
+    font-size: 0.9rem;
+}
+hr{
+    width: 90%;
+    margin: auto;
+    color: grey;
+}
+.instruction{
+    width: 90%;
+    margin: auto;
+    padding-top: 2%;
+    height: auto;
+    padding-bottom: 3%;
+    background-color:transparent;
+}
+.instruction p{
+    display: inline;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.instruction ol{
+    margin-left: 5%;
+    line-height:150% ;
+}
+.instruction ol li{
+    font-size: 0.9rem;
+}
+.instruction h2{
+    margin-bottom: 2%;
+    color: rgb(158, 34, 55);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.nutrition{
+    background-color:transparent;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 2%;
+}
+.nutrition h2{
+    text-transform: capitalize;
+    margin-bottom: 1%;
+    margin-top: 3%;
+    color:  rgb(158, 34, 55);
+}
+.nutrition table{
+    background-color: transparent;
+    text-transform: capitalize;
+    width: 90%;
+    margin-left: 2%;
+    height: 8rem;
+}
+.nutrition table th{
+    color:  rgb(158, 34, 55);
+    font-weight: bold;
+}
+.nutrition table td{
+    font-size: 0.89rem;
+    font-weight: lighter;
+}
+.nutrition p{
+    font-size: 0.89rem;
+}

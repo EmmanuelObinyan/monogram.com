@@ -1,0 +1,851 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: beige;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5.6rem;
+    flex-wrap: wrap;
+    z-index: 2;
+    position: fixed;
+    border-style: solid;
+    border-width: 1.1%;
+    border-top-width: 0;
+    border-right-width:0 ;
+    border-left-width:0;
+    border-color: rgb(233, 230, 230);
+    justify-self: center;
+    width: 100%;
+    margin-left:1%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+header div{
+    width: 20%;
+    font-size: 1.7rem;
+    margin-bottom:-1%;
+}
+/* header div img{
+    width: 10%;
+} */
+
+header div p{
+    margin-left: 2.5rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+}
+header nav{
+    background-color: rgb(20, 20, 168);
+    width: 75%;
+    border-top-left-radius: 30%;
+    height: 5.5rem;
+    justify-content: flex-end;
+    display: flex;
+}
+header nav ul {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    cursor: pointer;
+}
+header nav ul li a:last-child:hover{
+  color: white;
+  opacity: 0.7;
+  text-decoration-color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+header nav ul li i{
+    font-size: 95%;
+}
+header nav ul li{
+    display: inline;
+    text-transform:uppercase;
+    font-size:1rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    padding: 3px;
+    cursor: pointer;
+}
+header nav ul li a{
+    text-decoration:none;
+    color: wheat;
+    transition-duration: 1s;
+}
+figure{
+    background-color: rgb(30, 83, 180);
+    width: 100%;
+    height:50rem;
+    display: grid;
+    position: relative;
+    border-top-right-radius:5%;
+    border-top-left-radius: 5%;
+    margin-bottom: 2%;
+}
+figure img{
+    width: 100%;
+    height:50rem;
+    object-fit: cover;
+}
+figure article{
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+figure article h1{
+    font-size: 4.2rem;
+    text-transform: capitalize;
+    text-align:left;
+    margin:0 auto;
+    width: 40%;
+    color: wheat;
+    text-shadow:0 0 10px blue ;
+    animation-name: text;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:1;
+}
+@keyframes text{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.5);
+        text-shadow: 0 0 10px wheat;
+        color: blue;
+    }
+    100%{
+         transform: scale(1);
+         color:wheat ;
+    }
+}
+figure article h3{
+    font-size:1rem;
+    text-transform: capitalize;
+    display: block;
+    place-self: center;
+    margin-top: 2%;
+    margin-left: 12%;
+    color: wheat;
+    text-shadow:0 0 15px blue ;
+    width: 40%;
+    animation-name: word;
+    animation-delay: 4s;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in-out;
+}
+@keyframes word{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.3);
+        text-shadow: 0 0 10px wheat;
+        color: blue;
+    }
+    100%{
+         transform: scale(1);
+         color:wheat ;
+    }
+}
+main{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color:rgb(250, 244, 244);
+}
+section{
+    background-color:rgb(239, 230, 230);
+    width: 75%;
+    height:auto;
+    margin: auto;
+}
+.first-section{
+    background-color: rgb(239, 230, 230);
+    width: 75%;
+    justify-self: center;
+    height:auto;
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    column-gap: 2%;
+    grid-template-rows: repeat(auto,2);
+}
+
+/* .first-section .div{
+} */
+.first-div{
+    width: auto;
+    margin:0 auto;
+    height:19rem;
+}
+.first-div div{
+    height: auto;
+    position: relative;
+}
+
+
+.first-div div img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.first-div .text-section{
+    height: auto;
+}
+.text-section h2{
+    margin-bottom: 1%;
+    font-size: 1.2rem;
+    margin-left: 2%;
+    color:  rgb(20, 20, 168);
+}
+.text-section p{
+    font-weight:100;
+    margin-left: 2%;
+    font-size: 0.9rem;
+}
+.sale{
+    width: 20%;
+    position: absolute;
+    top:2%;
+    z-index: 1;
+    right: 0;
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: rgb(233, 89, 37);
+    text-transform: capitalize;
+    border: none;
+}
+.second-div{
+    width: auto;
+    margin:0 auto;
+    height:20rem;
+}
+.second-div div{
+    height: auto;
+    position: relative;
+}
+
+
+.second-div div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.second-div .word-section{
+    height:auto;
+    width: auto;
+}
+.word-section h2{
+    margin-bottom: 1%;
+    color:  rgb(20, 20, 168);
+    font-size: 1.2rem;
+    margin-left: 2%;
+}
+.word-section p{
+    font-weight:lighter;
+    margin-left: 2%;
+    font-size: 0.8rem;
+}
+.sale{
+    width: 30%;
+    position: absolute;
+    top:3%;
+    z-index: 1;
+    right: 0;
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: rgb(233, 89, 37);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border: none;
+}
+.third-div{
+    width: auto;
+    margin:0 auto;
+    height:20rem;
+}
+.third-div div{
+    height: auto;
+    position: relative;
+}
+
+
+.third-div div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.third-div .texts-section{
+    height:auto;
+    width: auto;
+}
+.texts-section h2{
+    margin-bottom: 1%;
+    color:  rgb(20, 20, 168);
+    font-size: 1.2rem;
+    margin-left: 2%;
+}
+.texts-section p{
+    font-weight: lighter;
+    margin-left: 2%;
+    font-size: 0.8rem;
+} 
+.big-image{
+ width: auto; 
+ margin:3% auto;
+ position: relative;
+ height: auto;
+ padding-bottom: 2%;
+}
+.big-image img{
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+article h1{
+    text-transform: capitalize;
+    width: 90%;
+    margin-left: 10%;
+    font-size: 1.2rem;
+    color: rgb(20, 20, 168);
+}
+article p{
+    text-transform: capitalize;
+    margin-left: 10%;
+    margin-top: 2%;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+.sold{
+    width: 20%;
+    position: absolute;
+    top:3%;
+    z-index: 1;
+    right: 10%;
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: rgb(233, 89, 37);
+    text-transform: uppercase;
+    border: none;   
+}
+.class{
+  width: 50%;  
+  margin-left: 80%;
+}
+.console{
+    width: 100%;
+    height: 28rem;
+    position: relative;
+}
+.console h1 ,h4{
+    position: absolute;
+}
+.console h1{
+    top:8% ;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: rgb(20, 20, 168);
+    width: 90%;
+    left:22%
+}
+.console h4{
+    top: 27%;
+    left: 40%;
+    font-weight: 300;
+    color:rgb(20, 20, 168) ;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.console img{
+    width: 100%;
+    display: block;
+    height: 28rem;
+    margin: auto;
+}
+.second-section{
+    background-color: transparent;
+    width: 85%;
+    margin-top: 2%;
+    height: 105rem;
+    padding-bottom: 30%;
+    column-gap: 2%;
+    row-gap: 2%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 25rem 25rem 25rem 25rem;
+}
+.second-section h2{
+    color: rgb(20, 20, 168) ;
+}
+.second-section div:nth-child(1){
+    position: relative;
+}
+.presale{
+    position: absolute;
+    right: 0;
+    top: 2%;
+    background-color: rgb(233, 89, 37);
+    border: none;
+    font-weight: bold;
+    z-index: 1;
+    width: 30%;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 1.3%;
+}
+.second-section div:nth-child(1) div h2,p{
+    display: inline;
+}
+.second-section div:nth-child(1) div{
+    background-color: transparent;
+}
+.second-section div:nth-child(1) div p{
+    margin-left: 27%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(106, 106, 106);
+}
+.second-section div:nth-child(1) div h2{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.second-img{
+  background-color: transparent;  
+}
+.second-img img{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+}
+.second-section div:nth-child(2){
+    background-color: transparent;
+}
+.multipad{
+    height: 23rem;
+    width: 100%;
+    background-color: transparent;
+}
+.multipad img{
+    width:100%;
+    height: 23rem;
+}
+.second-section div:nth-child(2) div h2,p{
+    display: inline;
+}
+.second-section div:nth-child(2) div p{
+    margin-left: 32%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(106, 106, 106);
+}
+.second-section div:nth-child(2) div h2{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.second-section div:nth-child(3){
+    background-color: transparent;
+}
+.core{
+    width: 100%;
+    height: 23rem;
+}
+.core img{
+    width: 100%;
+    height: 23rem;
+}
+.second-section div:nth-child(3) div h2,p{
+    display: inline;
+}
+.second-section div:nth-child(3) div p{
+    margin-left: 37%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(106, 106, 106);
+}
+.second-section div:nth-child(3) div h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.second-section div:nth-child(4) {
+    background-color:transparent;
+}
+.slider{
+    width: 100%;
+    height: 23rem;
+}
+.slider img{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+}
+.second-section div:nth-child(4) div h2,p{
+    display: inline;
+}
+.second-section div:nth-child(4) div p{
+    margin-left: 40%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(106, 106, 106);
+}
+.second-section div:nth-child(4) div h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.second-section div:nth-child(5) {
+    background-color:transparent;
+}
+.orbiter{
+    width: 100%;
+    height: 23rem;
+}
+.orbiter img{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+}
+.second-section div:nth-child(5) div h2,p{
+    display: inline;
+}
+.second-section div:nth-child(5) div p{
+    margin-left: 40%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(106, 106, 106);
+}
+.second-section div:nth-child(5) div h2{
+    text-transform:uppercase;
+    font-size: 1.2rem;
+}
+
+.essential{
+    width: 100%;
+    height: 23rem;
+}
+.essential img{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+}
+.second-section div:nth-child(6) div h2,p{
+    display: inline;
+}
+.second-section div:nth-child(6) div p{
+    margin-left: 22%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(106, 106, 106);
+}
+.second-section div:nth-child(6) div h2{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.dialmodule{
+    width: 100%;
+    height: 23rem;
+}
+.dialmodule img{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+}
+.second-section div:nth-child(7) div h2,p{
+    display: inline;
+}
+.second-section div:nth-child(7) div p{
+    margin-left: 47%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(106, 106, 106);
+}
+.second-section div:nth-child(7) div h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.monogramcase{
+    width: 100%;
+    height: 23rem;
+}
+.monogramcase img{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+}
+.second-section div:nth-child(8) div h2,p{
+    display: inline;
+}
+.second-section div:nth-child(8) div p{
+    margin-left: 15%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(106, 106, 106);
+}
+.second-section div:nth-child(8) div h2{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.videopack{
+    width: 100%;
+    height: 23rem;
+}
+.videopack img{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+}
+.second-section div:nth-child(9) div h2,p{
+    display: inline;
+}
+.second-section div:nth-child(9) div p{
+    margin-left: 30%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(106, 106, 106);
+}
+.second-section div:nth-child(9) div h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.photopack{
+    width: 100%;
+    height: 23rem;
+}
+.photopack img{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+}
+.second-section div:nth-child(10) div h2,p{
+    display: inline;
+}
+.second-section div:nth-child(10) div p{
+    margin-left: 30%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(106, 106, 106);
+}
+.second-section div:nth-child(10) div h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.audiopack{
+    width: 100%;
+    height: 23rem;
+}
+.audiopack img{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+}
+.second-section div:nth-child(11) div h2,p{
+    display: inline;
+}
+.second-section div:nth-child(11) div p{
+    margin-left: 30%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(106, 106, 106);
+}
+.second-section div:nth-child(11) div h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.monogramcare{
+    width: 100%;
+    height: 23rem;
+}
+.monogramcare img{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+}
+.second-section div:nth-child(12) div h2,p{
+    display: inline;
+}
+.second-section div:nth-child(12) div p{
+    margin-left: 32%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(106, 106, 106);
+}
+.second-section div:nth-child(12) div h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+footer{
+    background-color: rgb(20, 20, 168) ;
+    display: flex;
+    height: 20rem;
+    justify-content: center;
+}
+footer h3{
+    color: rgb(199, 208, 215);
+}
+footer div p{
+    color:rgb(199, 208, 215) ;
+}
+footer div:nth-child(1){
+    background-color: rgb(20, 20, 168) ;
+    width: 25%;
+    display: flex;
+    height: 15rem;
+    margin-top: 4%;
+    justify-content: space-between;
+}
+.monogram{
+    background-color: rgb(20, 20, 168) ;
+    height: auto;
+    width: 40%;
+    text-align: left;
+    cursor: pointer;
+}
+.monogram h3{
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+.monogram p{
+    display: block;
+    text-align: left;
+}
+.quicklink{
+    background-color: rgb(20, 20, 168) ;
+    width: 40%;
+    cursor: pointer;
+}
+.quicklink h3{
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 5%;
+    margin-left: 9%;
+}
+.quicklink p{
+    display: block;
+    line-height: 150%;
+}
+footer div:nth-child(2){
+    background-color: rgb(20, 20, 168) ;
+    width: 25%;
+    display: flex;
+    height: 15rem;
+    margin-top: 4%;
+    justify-content: space-around;
+}
+.help{
+    background-color: rgb(20, 20, 168) ;
+    margin-left: 4%;
+    width: 35%;
+    cursor: pointer;
+}
+.help h3{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-left: 10%;
+    margin-bottom: 9%;
+}
+.help p{
+    display: block;
+    line-height: 150%;
+}
+.information{
+    background-color: rgb(20, 20, 168) ;
+    cursor: pointer;
+}
+.information h3{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    width: 30%;
+    margin-bottom: 10%;
+}
+.information p{
+    display: block;
+    margin-left: 0;
+    line-height: 160%;
+}
+footer div:nth-child(3){
+    background-color:rgb(20, 20, 168) ;
+    width: 30%;
+    margin-top: 4%;
+    height: 15rem;
+}
+.subscribe{
+    background-color: rgb(20, 20, 168) ;
+}
+.subscribe h3{
+    margin-left: 10%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.subscribe p{
+    display: block;
+    margin-bottom: 3%;
+    text-transform: capitalize;
+}
+input{
+    margin-left: 10%;
+    padding: 1.5%;
+    border-color: white;
+    border-width: 1px;
+    background-color: transparent;
+}
+.button{
+    padding: 1.7%;
+    width: 25%;
+    margin-left: 2%;
+    background-color: rgb(188, 188, 178);
+    border-radius: 15px;
+    font-size: 0.7rem;
+    color: rgb(49, 44, 44);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+input::placeholder{
+    text-transform: capitalize;
+    color: rgb(218, 205, 205);
+}
+.subscribe div{
+    margin-top: 4%;
+    height: auto;
+    margin-left: 10%;
+    background-color:rgb(20, 20, 168) ;
+    width: 90%;
+}
+.subscribe div button i{
+    font-size: 1.1rem;
+    color:rgb(20, 20, 168)  ;
+}
+.subscribe div button{
+    border-radius: 200px;
+    padding: 1%;
+    margin-left: 1%;
+    border: none;
+}
+.subscribe div p{
+    margin-left: 0;
+    margin-top: 7%;
+}
